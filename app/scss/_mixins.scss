@@ -1,7 +1,7 @@
-@import './variables';
+@import "./variables";
 
 @mixin h1 {
-  font-family: 'Edit Undo BRK', sans-serif;
+  font-family: "Edit Undo BRK", sans-serif;
   font-size: 35px;
   line-height: 0.795;
   font-weight: normal;
@@ -21,7 +21,7 @@
 }
 
 @mixin h3 {
-  font-family: 'Edit Undo BRK', sans-serif;
+  font-family: "Edit Undo BRK", sans-serif;
   font-size: 14px;
   line-height: 1.052;
   font-weight: normal;
@@ -51,7 +51,7 @@
 }
 
 @mixin body1 {
-  font-family: 'Karma', sans-serif;
+  font-family: "Karma Suture", sans-serif;
   font-size: 16px;
   line-height: 1.333;
   font-weight: normal;
@@ -68,4 +68,3 @@
     font-size: 24px;
   }
 }
-
