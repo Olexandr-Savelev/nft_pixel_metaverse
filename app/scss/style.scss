@@ -52,21 +52,53 @@
         max-width: 1016px;
     }
 
-    &__text-left {
-        position: absolute;
-        top: 191px;
-        left: 0;
-    }
-
-    &__text-right {
-        position: absolute;
-        top: 572px;
-        right: 0;
-    }
-
     &__text {
-        max-width: 275px;
-        text-transform: uppercase;
+        position: absolute;
+        text-transform: lowercase;
+        line-height: 40px;
+        font-size: 24px;
+    }
+
+    &__text-1 {
+        top: 191px;
+        left: 245px;
+        width: 300px;
+    }
+
+    &__text-2 {
+        top: 464px;
+        width: 180px;
+        left: 300px;
+    }
+
+    &__text-3 {
+        top: 1316px;
+        left: 190px;
+        width: 245px;
+    }
+
+    &__text-4 {
+        top: 572px;
+        right: 185px;
+        width: 135px;
+    }
+
+    &__text-5 {
+        top: 917px;
+        right: 160px;
+        width: 200px;
+    }
+
+    &__text-6 {
+        top: 1540px;
+        right: 195px;
+        width: 130px;
+    }
+
+    &__text-7 {
+        top: 2022px;
+        right: 142px;
+        width: 200px;
     }
 }
 
