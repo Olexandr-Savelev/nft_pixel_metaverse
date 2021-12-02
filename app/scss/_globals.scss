@@ -1,0 +1,55 @@
+@import './mixins';
+
+.relative {
+  position: relative;
+}
+
+body {
+  @include body1;
+  height: 100%;
+  background: linear-gradient(180deg, #000f2e 21.35%, #15d2f1 58.33%, #ffffff 111%);
+}
+
+.container {
+  max-width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @media (min-width: $breakpoint-laptop) {
+      max-width: $max-width-laptop;
+  }
+  @media (min-width: $max-width-desktop) {
+      max-width: $max-width-desktop;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h1;
+}
+
+h3 {
+  @include h3;
+}
+
+p {
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $breakpoint-mobile) {
+    padding: 0 10%;
+  }
+
+  @media (min-width: $breakpoint-laptop) {
+    padding: 0 20%;
+  }
+}
