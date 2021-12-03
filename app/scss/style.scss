@@ -1,7 +1,7 @@
-@import './reset';
-@import './fonts';
-@import './globals';
-@import './variables';
+@import "./reset";
+@import "./fonts";
+@import "./globals";
+@import "./variables";
 
 $header-bg-offset: 70px;
 
@@ -36,6 +36,13 @@ main {
 }
 
 .building {
+    &__image-wrapper {
+        width: 78%;
+        margin: 0 auto;
+        @media (min-width: $breakpoint-tablet) {
+            width: 100%;
+        }
+    }
     h3 {
         position: absolute;
 
@@ -63,6 +70,15 @@ main {
             @media (min-width: $breakpoint-mobile) {
                 left: 2%;
             }
+            @media (min-width: $breakpoint-tablet) {
+                right: 9%;
+                width: 150px;
+            }
+
+            @media (min-width: $breakpoint-desktop) {
+                width: 245px;
+            }
+
             @media (min-width: $breakpoint-large) {
                 left: 0%;
             }
@@ -71,47 +87,67 @@ main {
         &:nth-of-type(3) {
             top: 25%;
             left: auto;
-            right: 1%;
+            right: 3%;
             text-align: left;
+            @media (min-width: $breakpoint-mobile) {
+                right: 3%;
+            }
             @media (min-width: $breakpoint-large) {
-                right: 0%;
+                right: -3%;
             }
         }
 
         &:nth-of-type(4) {
             top: 42%;
             left: auto;
-            right: 1%;
+            right: 2%;
             text-align: left;
             @media (min-width: $breakpoint-mobile) {
-                right: 1%;
+                right: 2%;
             }
             @media (min-width: $breakpoint-tablet) {
                 right: 1%;
             }
             @media (min-width: $breakpoint-laptop) {
-                right: 0%;
+                right: 1%;
+            }
+            @media (min-width: $breakpoint-desktop) {
+                right: -2%;
             }
             @media (min-width: $breakpoint-large) {
-                right: -10%;
+                right: -5%;
             }
         }
 
         &:nth-of-type(5) {
-            top: 60%;
-            left: 2%;
+            top: 57%;
+            left: 1%;
             text-align: right;
+            width: 85px;
+
             @media (min-width: $breakpoint-mobile) {
-                left: 2%;
+                left: 1%;
+                width: 85px;
             }
             @media (min-width: $breakpoint-tablet) {
                 left: 2%;
+                width: 150px;
+                top: 58%;
             }
             @media (min-width: $breakpoint-laptop) {
                 left: 0%;
+                top: 57%;
+                width: 200px;
             }
+
+            @media (min-width: $breakpoint-desktop) {
+                top: 56%;
+            }
+
             @media (min-width: $breakpoint-large) {
-                left: -10%;
+                width: 225px;
+                top: 56%;
+                left: -1%;
             }
         }
 
@@ -127,7 +163,7 @@ main {
                 right: 2%;
             }
             @media (min-width: $breakpoint-laptop) {
-                right: -1%;
+                right: 1%;
             }
             @media (min-width: $breakpoint-large) {
                 right: -4%;
@@ -165,7 +201,7 @@ main {
         align-items: center;
 
         ul {
-            padding-left: 40px;
+            padding-left: 20px;
         }
     }
 
@@ -185,7 +221,7 @@ main {
 
     &__list-item-dot {
         position: absolute;
-        content: '';
+        content: "";
         width: 3px;
         height: 3px;
         background-color: #fff;
@@ -195,18 +231,16 @@ main {
 }
 
 .marketplace {
-    margin-bottom: 80px;
-
     @media (min-width: $breakpoint-tablet) {
-        margin-bottom: 110px;
-      }
+        margin-bottom: 30px;
+    }
 
     @media (min-width: $breakpoint-laptop) {
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
 
     @media (min-width: $breakpoint-desktop) {
-        margin-bottom: 208px;
+        margin-bottom: 120px;
     }
 
     &__wrapper {
@@ -246,13 +280,13 @@ main {
         line-height: 0.864;
         margin-bottom: 16px;
         @media (min-width: $breakpoint-mobile) {
-            font-size: 44px;
+            font-size: 30px;
         }
     }
 
     &__text {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 22px;
+        line-height: 28px;
         color: #000000;
         margin-bottom: 40px;
         text-align: center;
