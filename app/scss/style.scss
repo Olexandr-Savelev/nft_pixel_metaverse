@@ -1,7 +1,7 @@
-@import './reset';
-@import './fonts';
-@import './globals';
-@import './variables';
+@import "./reset";
+@import "./fonts";
+@import "./globals";
+@import "./variables";
 
 $header-bg-offset: 70px;
 
@@ -46,7 +46,7 @@ main {
                 left: 4%;
             }
             @media (min-width: $breakpoint-tablet) {
-                left: 2%;
+                left: 3%;
             }
             @media (min-width: $breakpoint-laptop) {
                 left: 0%;
@@ -187,7 +187,7 @@ main {
 
     &__list-item-dot {
         position: absolute;
-        content: '';
+        content: "";
         width: 3px;
         height: 3px;
         background-color: #fff;
@@ -201,7 +201,7 @@ main {
 
     @media (min-width: $breakpoint-tablet) {
         margin-bottom: 110px;
-      }
+    }
 
     @media (min-width: $breakpoint-laptop) {
         margin-bottom: 150px;
