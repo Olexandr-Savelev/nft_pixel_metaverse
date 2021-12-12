@@ -7,7 +7,7 @@
 body {
   @include body1;
   height: 100%;
-  background: linear-gradient(180deg, #000f2e 21.35%, #15d2f1 58.33%, #ffffff 111%);
+  background: linear-gradient(180deg, #000f2e 21.35%, #15d2f1 58.33%, #ffffff 88.54%);
 }
 
 .container {
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  @include h1;
+  @include h2;
 }
 
 h3 {
