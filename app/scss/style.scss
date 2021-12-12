@@ -36,13 +36,7 @@ main {
 }
 
 .building {
-    &__image-wrapper {
-        width: 78%;
-        margin: 0 auto;
-        @media (min-width: $breakpoint-tablet) {
-            width: 100%;
-        }
-    }
+    overflow-x: hidden;
     h3 {
         position: absolute;
 
@@ -50,10 +44,10 @@ main {
             top: 9%;
             left: 2%;
             @media (min-width: $breakpoint-mobile) {
-                left: 2%;
+                left: 4%;
             }
             @media (min-width: $breakpoint-tablet) {
-                left: 2%;
+                left: 6%;
             }
             @media (min-width: $breakpoint-laptop) {
                 left: 0%;
@@ -70,15 +64,6 @@ main {
             @media (min-width: $breakpoint-mobile) {
                 left: 2%;
             }
-            @media (min-width: $breakpoint-tablet) {
-                right: 9%;
-                width: 150px;
-            }
-
-            @media (min-width: $breakpoint-desktop) {
-                width: 245px;
-            }
-
             @media (min-width: $breakpoint-large) {
                 left: 0%;
             }
@@ -87,67 +72,51 @@ main {
         &:nth-of-type(3) {
             top: 25%;
             left: auto;
-            right: 3%;
+            right: 1%;
             text-align: left;
-            @media (min-width: $breakpoint-mobile) {
-                right: 3%;
-            }
             @media (min-width: $breakpoint-large) {
-                right: -3%;
+                right: 0%;
             }
         }
 
         &:nth-of-type(4) {
             top: 42%;
             left: auto;
-            right: 2%;
+            right: 1%;
             text-align: left;
             @media (min-width: $breakpoint-mobile) {
-                right: 2%;
+                right: 1%;
             }
             @media (min-width: $breakpoint-tablet) {
-                right: 1%;
+                right: 3%;
+                max-width: 100px;
             }
             @media (min-width: $breakpoint-laptop) {
-                right: 1%;
-            }
-            @media (min-width: $breakpoint-desktop) {
-                right: -2%;
+                right: 5%;
             }
             @media (min-width: $breakpoint-large) {
-                right: -5%;
+                right: -10%;
+                max-width: none;
             }
         }
 
         &:nth-of-type(5) {
-            top: 57%;
-            left: 1%;
+            top: 60%;
+            left: -3%;
             text-align: right;
-            width: 85px;
+            max-width: 100px;
 
             @media (min-width: $breakpoint-mobile) {
-                left: 1%;
-                width: 85px;
-            }
-            @media (min-width: $breakpoint-tablet) {
                 left: 2%;
-                width: 150px;
-                top: 58%;
+                max-width: none;
             }
             @media (min-width: $breakpoint-laptop) {
-                left: 0%;
-                top: 57%;
-                width: 200px;
+                left: -2%;
+                max-width: 200px;
             }
-
-            @media (min-width: $breakpoint-desktop) {
-                top: 56%;
-            }
-
             @media (min-width: $breakpoint-large) {
-                width: 225px;
-                top: 56%;
-                left: -1%;
+                left: -10%;
+                max-width: none;
             }
         }
 
@@ -163,7 +132,7 @@ main {
                 right: 2%;
             }
             @media (min-width: $breakpoint-laptop) {
-                right: 1%;
+                right: -1%;
             }
             @media (min-width: $breakpoint-large) {
                 right: -4%;
@@ -199,9 +168,11 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
 
         ul {
-            padding-left: 20px;
+            padding-left: 40px;
         }
     }
 
@@ -231,16 +202,18 @@ main {
 }
 
 .marketplace {
+    margin-bottom: 80px;
+
     @media (min-width: $breakpoint-tablet) {
-        margin-bottom: 30px;
+        margin-bottom: 110px;
     }
 
     @media (min-width: $breakpoint-laptop) {
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
 
     @media (min-width: $breakpoint-desktop) {
-        margin-bottom: 120px;
+        margin-bottom: 208px;
     }
 
     &__wrapper {
@@ -260,7 +233,10 @@ main {
 
     &__image {
         @media (min-width: $breakpoint-laptop) {
-            padding-left: 15%;
+            margin-left: 2%;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            margin-left: 6%;
         }
     }
 }
@@ -276,17 +252,15 @@ main {
 
     &__heading {
         color: #000000;
-        font-size: 28px;
-        line-height: 0.864;
+        font-size: 44px;
+        line-height: 38px;
         margin-bottom: 16px;
-        @media (min-width: $breakpoint-mobile) {
-            font-size: 30px;
-        }
+        text-align: center;
     }
 
     &__text {
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 24px;
+        line-height: 32px;
         color: #000000;
         margin-bottom: 40px;
         text-align: center;
