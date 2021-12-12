@@ -1,4 +1,4 @@
-@import './mixins';
+@import "./mixins";
 
 .relative {
   position: relative;
@@ -16,10 +16,10 @@ body {
   padding-right: 15px;
   margin: 0 auto;
   @media (min-width: $breakpoint-laptop) {
-      max-width: $max-width-laptop;
+    max-width: $max-width-laptop;
   }
   @media (min-width: $max-width-desktop) {
-      max-width: $max-width-desktop;
+    max-width: $max-width-desktop;
   }
 }
 
