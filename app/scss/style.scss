@@ -88,11 +88,11 @@ main {
                 right: 1%;
             }
             @media (min-width: $breakpoint-tablet) {
-                right: 1%;
+                right: 3%;
+                max-width: 100px;
             }
             @media (min-width: $breakpoint-laptop) {
-                right: -0%;
-                max-width: 150px;
+                right: 5%;
             }
             @media (min-width: $breakpoint-large) {
                 right: -10%;
@@ -236,7 +236,7 @@ main {
             margin-left: 2%;
         }
         @media (min-width: $breakpoint-desktop) {
-            margin-left: 11%;
+            margin-left: 6%;
         }
     }
 }
